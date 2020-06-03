@@ -58,7 +58,7 @@ const App = () => {
         </Row>
       </Card>
       <Row className="justify-content-center" style={{marginTop: "3rem", marginBottom:"1rem"}}>
-        <span className="special-title">Skills & Tools</span>
+        <span className="title">Skills & Tools</span>
       </Row>
       <div id="skill">
         <div className="skills">
@@ -67,9 +67,12 @@ const App = () => {
           <span><img src="img/javascript.png" height="60" alt="javascript" /></span>
           <span><img src="img/bootstrap.png" height="50" alt="bootstrap" /></span>
           <span><img src="img/laravel.png" height="50" alt="laravel" /></span>
+          <span><img src="img/mysql.png" height="60" alt="mysql" /></span>
+          <span><img src="img/sql-server.png" height="50" alt="sql-server" /></span>
           <span><img src="img/vue.png" height="50" alt="vue" /></span>
           <span><img src="img/react.png" height="50" alt="react" /></span>
           <span><img src="img/git.png" height="60" alt="git" /></span>
+          <span><img src="img/visual-studio-code.png" height="50" alt="vsc" /></span>
           <span><img src="img/trello.png" height="60" alt="trello" /></span>
         </div>
       </div>
@@ -78,22 +81,22 @@ const App = () => {
       <hr />
       <Row>
         <Col md={{span:8}}>
-          <p className="contact-style"><FontAwesomeIcon icon={faMapMarkerAlt} style={{color:"#000"}} /> Corrientes, Argentina</p>
-          <p className="contact-style"><a href="mailto:andrea14_06_2@hotmail.com"><FontAwesomeIcon icon={faEnvelope} /> andrea14_06_2@hotmail.com</a></p>
+          <p className="contact"><FontAwesomeIcon icon={faMapMarkerAlt} style={{color:"#000"}} /> Ciudad de Corrientes, Argentina</p>
+          <p className="contact"><FontAwesomeIcon icon={faEnvelope} /> andrea14_06_2@hotmail.com</p>
         </Col>
         <Col md={{ span: 4 }} >
           <div id="icons">
-            <p className="contact-style">Contacto</p>
+            {/* <p className="contact-style">Contacto</p> */}
             <a
               href="https://www.linkedin.com/in/andrea-evangelina-monta%C3%B1o/"
               target="_blank"
               rel="noopener noreferrer"
-            ><FontAwesomeIcon icon={faLinkedin} size="2x" style={{backgroundColor:"#fff"}} /></a>
+            ><FontAwesomeIcon icon={faLinkedin} size="2x" style={{color:"#444"}} /></a>
             <a
               href="https://github.com/andreamon"
               target="_blank"
               rel="noopener noreferrer"
-            ><FontAwesomeIcon icon={faGithubSquare} size="2x" style={{ color: "#000", backgroundColor:"#fff" }} /></a>
+            ><FontAwesomeIcon icon={faGithubSquare} size="2x" style={{ color: "#444"}} /></a>
           </div>
         </Col>
       </Row>

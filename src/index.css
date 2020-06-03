@@ -17,6 +17,12 @@ code {
   font-size: 2rem;
 }
 
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
 .content {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.25rem !important;
@@ -35,6 +41,10 @@ code {
   margin-left: 1rem;
 }
 
+#icons a:hover path {
+  color: #000000;
+}
+
 .skills {
   display: flex;
   justify-content: space-evenly;
@@ -42,22 +52,18 @@ code {
   list-style: none;
 }
 
-.skills span{
+.skills span {
   width: 80px;
   height: 80px;
   border-radius: 10%;
   background-color: #fff;
-  box-shadow:0 2px 8px rgba(25,30,42,0.12);
+  box-shadow: 0 2px 8px rgba(25, 30, 42, 0.12);
   margin: 12px;
   padding: 12px;
 }
 
-.contact-style{
+.contact {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-left: 1rem;
-}
-
-.contact-style a{
-  text-decoration: none;
 }
