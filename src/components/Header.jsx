@@ -10,7 +10,7 @@ const Header = () => {
             Andrea Montaño{" "}
             <span role="img" aria-label="dev">
               {" "}
-              👩🏽‍💻{" "}
+              🧉💻{" "}
             </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
