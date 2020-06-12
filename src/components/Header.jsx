@@ -7,7 +7,7 @@ const Header = () => {
       <Col className="content">
         <Navbar expand="lg">
           <Navbar.Brand className="special-title">
-            Andrea Montaño{" "}
+            <span style={{color:"#fff"}}>Andrea Montaño</span>{" "}
             <span role="img" aria-label="dev">
               {" "}
               🧉💻{" "}

@@ -24,7 +24,7 @@ const AboutMe = () => {
             >
               Full Stack Web Developer
             </Card.Subtitle>
-            <Card.Text class="content-typed">
+            <Card.Text className="content-typed">
               <span>Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando mis habilidades profesionales.</span><br />
               <span ref={contentEffect} />
             </Card.Text>

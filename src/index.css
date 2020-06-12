@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Quicksand&display=swap');
 body {
-  background-color: #F8E4E5;
+  /* background-color: #F8E4E5; */
+  background: 
+            linear-gradient(rgb(255, 0, 179), transparent),
+            linear-gradient(to top left, lime, transparent),
+            linear-gradient(to top right, rgb(0, 132, 255), transparent);
+  background-blend-mode: screen;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +20,8 @@ code {
 }
 
 .special-title {
-  font-family: 'Chelsea Market', cursive;
+  /* font-family: 'Chelsea Market', cursive; */
+  font-family: 'Balsamiq Sans', cursive;
   /* font-size: 2rem; */
 }
 
