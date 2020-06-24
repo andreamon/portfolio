@@ -16,16 +16,16 @@ const AboutMe = () => {
       <Row>
         <Col md={{ span: 8 }}>
           <Card.Body>
-            <Card.Title style={{ fontSize: "1em", fontWeight:"bold" }}>
+            <Card.Title style={{ fontSize: "1.2em", fontWeight:"bold" }}>
               Andrea Montaño
             </Card.Title>
             <Card.Subtitle
               className="mb-2 text-muted"
-              style={{ fontSize: ".9em" }}
+              style={{ fontSize: "1em" }}
             >
               Full Stack Web Developer
             </Card.Subtitle>
-            <Card.Text className="content-typed" style={{ fontSize: ".9em" }}>
+            <Card.Text className="content-typed" style={{ fontSize: "1em" }}>
               <span ref={contentEffect} />
             </Card.Text>
           </Card.Body>
