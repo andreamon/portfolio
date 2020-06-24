@@ -6,9 +6,10 @@ const AboutMe = () => {
   const contentEffect = useRef(null);
   const contentTyped = useTyped(contentEffect, {
     strings: [`Analista programadora universitaria <span role="img" aria-label="dev">
-      👩🏽‍💻
-  </span>. Me considero una persona proactiva. Me gusta aprender sobre diferentes tecnologías para así poder implementar las mejores soluciones.`],
-    typeSpeed: 75,
+    👩🏽‍💻 </span><br/>
+    Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando mis habilidades profesionales.<br />
+     Me considero una persona proactiva. Me gusta aprender sobre diferentes tecnologías para así poder implementar las mejores soluciones.`],
+    typeSpeed: 60,
   });
   return (
     <Card id="about-me" className="content">
@@ -25,7 +26,6 @@ const AboutMe = () => {
               Full Stack Web Developer
             </Card.Subtitle>
             <Card.Text className="content-typed" style={{ fontSize: ".9em" }}>
-              <span>Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando mis habilidades profesionales.</span><br />
               <span ref={contentEffect} />
             </Card.Text>
           </Card.Body>
