@@ -49,7 +49,7 @@ const Skills = () => {
             <img src="img/trello.png" height="60" alt="trello" />
           </span>
           {/* <span>
-            <img src="img/sourcetree.jpg" height="60" alt="sourcetree" />
+            <img src="img/sass.jpg" height="60" alt="sourcetree" />
           </span> */}
         </div>
       </div>

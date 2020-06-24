@@ -8,23 +8,23 @@ const AboutMe = () => {
     strings: [`Analista programadora universitaria <span role="img" aria-label="dev">
       👩🏽‍💻
   </span>. Me considero una persona proactiva. Me gusta aprender sobre diferentes tecnologías para así poder implementar las mejores soluciones.`],
-    typeSpeed: 60,
+    typeSpeed: 75,
   });
   return (
     <Card id="about-me" className="content">
       <Row>
         <Col md={{ span: 8 }}>
           <Card.Body>
-            <Card.Title style={{ fontSize: "1.5rem", fontWeight:"bold" }}>
+            <Card.Title style={{ fontSize: "1em", fontWeight:"bold" }}>
               Andrea Montaño
             </Card.Title>
             <Card.Subtitle
               className="mb-2 text-muted"
-              style={{ fontSize: "1.25rem" }}
+              style={{ fontSize: ".9em" }}
             >
               Full Stack Web Developer
             </Card.Subtitle>
-            <Card.Text className="content-typed">
+            <Card.Text className="content-typed" style={{ fontSize: ".9em" }}>
               <span>Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando mis habilidades profesionales.</span><br />
               <span ref={contentEffect} />
             </Card.Text>
@@ -34,7 +34,7 @@ const AboutMe = () => {
           <Card.Img
             className="img-fluid"
             style={{ width: "500px", padding: "1rem" }}
-            src="img/profile.jpg"
+            src="img/mex-cancun.jpg"
           />
         </Col>
       </Row>
