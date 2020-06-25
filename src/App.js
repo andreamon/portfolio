@@ -1,22 +1,42 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, Suspense, lazy } from "react";
 import { Container } from "react-bootstrap";
-
-import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import Skills from "./components/Skills";
-import Footer from "./components/Footer";
 import Spinner from "./components/Spinner";
 
-const App = () => {
-  const [loading, setLoading] = useState(false);
+const Header = lazy(() => import("./components/Header"));
+// import Header from "./components/Header";
+const AboutMe = lazy(() => import("./components/AboutMe"));
+// import AboutMe from "./components/AboutMe";
+const Skills = lazy(() => import("./components/Skills"));
+// import Skills from "./components/Skills";
+const Footer = lazy(() => import("./components/Footer"));
+// import Footer from "./components/Footer";
 
-  setTimeout(() => {
-    setLoading(false);
-  }, 5000);
+const App = () => {
+  // const [loading, setLoading] = useState(true);
+
+  // setTimeout(() => {
+  //   setLoading(false);
+  // }, 5000);
 
   return (
     <Fragment>
-      {loading ? (
+      <Suspense
+        fallback={
+          <div>
+            <Spinner />
+          </div>
+        }
+      >
+        <>
+          <Container style={{ marginBottom: "5rem" }}>
+            <Header />
+            <AboutMe />
+            <Skills />
+          </Container>
+          <Footer />
+        </>
+      </Suspense>
+      {/* {loading ? (
         <Spinner />
       ) : (
         <>
@@ -27,7 +47,7 @@ const App = () => {
           </Container>
           <Footer />
         </>
-      )}
+      )} */}
     </Fragment>
   );
 };
