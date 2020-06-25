@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Spinner from "./components/Spinner";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   setTimeout(() => {
     setLoading(false);
