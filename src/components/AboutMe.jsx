@@ -34,7 +34,7 @@ const AboutMe = () => {
           <Card.Img
             className="img-fluid"
             style={{ width: "500px", padding: "1rem" }}
-            src="img/mex-cancun.jpg"
+            src={require("../img/mex-cancun.jpg")}
           />
         </Col>
       </Row>

@@ -13,40 +13,40 @@ const Skills = () => {
       <div id="skill">
         <div className="skills">
           <span>
-            <img src="img/html5.png" height="60" alt="html5" />
+            <img src={require("../img/html5.png")} height="60" alt="html5" />
           </span>
           <span>
-            <img src="img/css.png" height="60" alt="css" />
+            <img src={require("../img/css.png")} height="60" alt="css" />
           </span>
           <span>
-            <img src="img/javascript.png" height="60" alt="javascript" />
+            <img src={require("../img/javascript.png")} height="60" alt="javascript" />
           </span>
           <span>
-            <img src="img/bootstrap.png" height="50" alt="bootstrap" />
+            <img src={require("../img/bootstrap.png")} height="50" alt="bootstrap" />
           </span>
           <span>
-            <img src="img/laravel.png" height="50" alt="laravel" />
+            <img src={require("../img/laravel.png")} height="50" alt="laravel" />
           </span>
           <span>
-            <img src="img/mysql.png" height="60" alt="mysql" />
+            <img src={require("../img/mysql.png")} height="60" alt="mysql" />
           </span>
           <span>
-            <img src="img/sql-server.png" height="50" alt="sql-server" />
+            <img src={require("../img/sql-server.png")} height="50" alt="sql-server" />
           </span>
           <span>
-            <img src="img/vue.png" height="50" alt="vue" />
+            <img src={require("../img/vue.png")} height="50" alt="vue" />
           </span>
           <span>
-            <img src="img/react.png" height="50" alt="react" />
+            <img src={require("../img/react.png")} height="50" alt="react" />
           </span>
           <span>
-            <img src="img/git.png" height="60" alt="git" />
+            <img src={require("../img/git.png")} height="60" alt="git" />
           </span>
           <span>
-            <img src="img/visual-studio-code.png" height="50" alt="vsc" />
+            <img src={require("../img/visual-studio-code.png")} height="50" alt="vsc" />
           </span>
           <span>
-            <img src="img/trello.png" height="60" alt="trello" />
+            <img src={require("../img/trello.png")} height="60" alt="trello" />
           </span>
           {/* <span>
             <img src="img/sass.jpg" height="60" alt="sourcetree" />
