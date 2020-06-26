@@ -18,9 +18,8 @@ const Footer = () => {
             <FontAwesomeIcon icon={faEnvelope} /> andrea14_06_2@hotmail.com
           </p>
         </Col>
-        <Col md={{ span: 4 }} style={{marginTop: "1em"}}>
+        <Col md={{ span: 4 }}>
           <div id="icons">
-            {/* <p className="contact-style">Contacto</p> */}
             <a
               href="https://www.linkedin.com/in/andrea-evangelina-monta%C3%B1o/"
               target="_blank"

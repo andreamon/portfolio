@@ -37,6 +37,10 @@ code {
   border-right: transparent;
 }
 
+#icons {
+  display: flex;
+  justify-content: flex-end;
+}
 #icons a {
   padding: 5px;
   margin-left: 1rem;
@@ -47,7 +51,7 @@ code {
 
 .skills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -69,7 +73,12 @@ code {
 
 @media screen and (max-width: 500px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  #icons {
+    display: flex;
+    justify-content: start;
   }
 }
 /*# sourceMappingURL=app.css.map */
