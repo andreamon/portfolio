@@ -6,7 +6,7 @@ import {faMapMarkerAlt, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <Container fluid id="contacto">
+    <Container id="contacto">
       <hr />
       <Row>
         <Col md={{ span: 8 }}>
@@ -18,7 +18,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faEnvelope} /> andrea14_06_2@hotmail.com
           </p>
         </Col>
-        <Col md={{ span: 4 }}>
+        <Col md={{ span: 4 }} style={{marginTop: "1em"}}>
           <div id="icons">
             {/* <p className="contact-style">Contacto</p> */}
             <a
