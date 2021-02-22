@@ -1,30 +1,47 @@
 import React from "react";
-import {Row, Col, Navbar, Nav} from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <Row>
-      <Col className="content">
-        <Navbar expand="lg">
-          <Navbar.Brand className="special-title">
-            <span >Andrea Montaño</span>{" "}
-            <span role="img" aria-label="dev">
-              {" "}
-              💻{" "}
-            </span>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#about-me">Sobre mí</Nav.Link>
-              <Nav.Link href="#skill">Skills</Nav.Link>
-              {/* <Nav.Link href="#proyects">Proyectos</Nav.Link> */}
-              <Nav.Link href="#contacto">Contacto</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </Col>
-    </Row>
+    <nav className="container">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="block text-xl font-medium">Andrea Montaño</div>
+        <div className="md:flex md:justify-end tracking-wide text-base font-medium">
+          <a href="#"
+            className="item-header"
+            // activeClassName="menu_active"
+          >
+            Sobre mi
+          </a>
+          <a href="#"
+            className="item-header"
+            // activeClassName="menu_active"
+          >
+            Mi CV
+          </a>
+          <a href="#"
+            className="item-header"
+            // activeClassName="menu_active"
+          >
+            Proyectos
+          </a>
+          <a href="#"
+            className="item-header"
+            // activeClassName="menu_active"
+          >
+            Contacto
+          </a>
+        </div>
+      </div>
+    </nav>
+    //   <div className="block md:hidden text-indigo-400 mt-8 mr-2">
+    //     <button className="menu_burger" onClick={() => setOpenMenu(!openMenu)}>
+    //       {openMenu ? (
+    //         <i className="fas fa-times" style={{ color: "#818CF8" }}></i>
+    //       ) : (
+    //         <i className="fas fa-bars" style={{ color: "#818CF8" }}></i>
+    //       )}
+    //     </button>
+    //   </div>
   );
 };
 
