@@ -1,11 +1,11 @@
 import React, { Fragment, Suspense, lazy } from "react";
-import { Container } from "react-bootstrap";
+
 import Spinner from "./components/Spinner";
 
 const Header = lazy(() => import("./components/Header"));
 const AboutMe = lazy(() => import("./components/AboutMe"));
-const Skills = lazy(() => import("./components/Skills"));
-const Footer = lazy(() => import("./components/Footer"));
+const Resume = lazy(() => import("./components/Resume"));
+const Projects = lazy(() => import("./components/Projects"));
 
 const App = () => {
   return (
@@ -17,14 +17,10 @@ const App = () => {
           </div>
         }
       >
-        <>
-          <Container style={{ marginBottom: "5rem" }}>
-            <Header />
-            <AboutMe />
-            <Skills />
-          </Container>
-          <Footer />
-        </>
+        <Header />
+        <AboutMe />
+        <Resume />
+        <Projects />
       </Suspense>
     </Fragment>
   );
