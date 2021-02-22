@@ -1,44 +1,24 @@
-import React, {useRef} from "react";
-import {Card, Col, Row} from 'react-bootstrap';
-import useTyped from "use-typed";
+import React from "react";
 
 const AboutMe = () => {
-  const contentEffect = useRef(null);
-  const contentTyped = useTyped(contentEffect, {
-    strings: [`Analista programadora universitaria <span role="img" aria-label="dev">
-    👩🏽‍💻 </span><br/>
-    Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando mis habilidades profesionales.<br />
-     Me considero una persona proactiva. Me gusta aprender sobre diferentes tecnologías para así poder implementar las mejores soluciones.`],
-    typeSpeed: 60,
-  });
   return (
-    <Card id="about-me" className="content">
-      <Row>
-        <Col md={{ span: 8 }}>
-          <Card.Body>
-            <Card.Title style={{ fontSize: "1.2em", fontWeight:"bold" }}>
-              Andrea Montaño
-            </Card.Title>
-            <Card.Subtitle
-              className="mb-2 text-muted"
-              style={{ fontSize: "1em" }}
-            >
-              Full Stack Web Developer
-            </Card.Subtitle>
-            <Card.Text className="content-typed" style={{ fontSize: "1em" }}>
-              <span ref={contentEffect} />
-            </Card.Text>
-          </Card.Body>
-        </Col>
-        <Col md={{ span: 4 }}>
-          <Card.Img
-            className="img-fluid"
-            style={{ width: "500px", padding: "1rem" }}
-            src={require("../img/mex-cancun.jpg")}
-          />
-        </Col>
-      </Row>
-    </Card>
+    <div className="container flex flex-row justify-between items-center">
+      <div className="flex-1 flex-col items-start">
+        <p className="font-bold text-3xl">
+          Hola! Soy <span className="text-pink-500">Andrea</span>
+        </p>
+        <p className="my-2 text-xl font-semibold">Desarrollo Frontend</p>
+        <p className="text-xl">
+          Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando
+          mis habilidades profesionales. Me considero una persona proactiva. Me
+          gusta aprender sobre diferentes tecnologías para así poder implementar
+          las mejores soluciones.
+        </p>
+      </div>
+      <div className="flex-1">
+        <img className="max-w-full h-auto" src="../portfolio/images/about-me.png" alt="sobre mi" />
+      </div>
+    </div>
   );
 };
 
