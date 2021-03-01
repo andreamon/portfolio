@@ -4,29 +4,25 @@ const Header = () => {
   return (
     <nav className="container">
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="block text-xl font-medium">Andrea Montaño</div>
+        <div className="block text-xl font-semibold">Andrea Montaño</div>
         <div className="md:flex md:justify-end tracking-wide text-base font-medium">
-          <a href="#"
+          <a href="#about-me"
             className="item-header"
-            // activeClassName="menu_active"
           >
             Sobre mi
           </a>
-          <a href="#"
+          <a href="#resume"
             className="item-header"
-            // activeClassName="menu_active"
           >
             Mi CV
           </a>
-          <a href="#"
+          <a href="#projects"
             className="item-header"
-            // activeClassName="menu_active"
           >
             Proyectos
           </a>
-          <a href="#"
+          <a href="#contact"
             className="item-header"
-            // activeClassName="menu_active"
           >
             Contacto
           </a>

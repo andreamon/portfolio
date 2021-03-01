@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="container flex flex-row justify-between items-center">
+    <div id="about-me" className="container flex flex-row justify-between items-center">
       <div className="flex-1 flex-col items-start">
         <p className="font-bold text-3xl">
           Hola! Soy <span className="text-pink-500">Andrea</span>

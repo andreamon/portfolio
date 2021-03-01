@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -13,65 +17,45 @@ body {
   width: 1100px;
 }
 
-code {
-  font-family: 'Open Sans', sans-serif;
+.slider {
+  position: relative;
+  height: 100vh;
 }
 
-.special-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+.arrow-right {
+  position: absolute;
+  top: 40%;
+  right: 32px;
+  color: #ec4899;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-  font-size: 2em;
+.arrow-left {
+  position: absolute;
+  top: 40%;
+  left: 32px;
+  color: #ec4899;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.content {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.25em !important;
-  margin-top: 3rem;
+.image {
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 25%;
 }
 
-#about-me {
-  padding: 15px 15px 0px 15px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgb(255, 245, 233);
-  border-top: transparent;
-  border-right: transparent;
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
 }
 
-#icons a {
-  padding: 5px;
-  margin-left: 1rem;
-}
-
-#icons a:hover path {
-  color: #000000;
-}
-
-.skills {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.skills span {
-  width: 80px;
-  height: 80px;
-  border-radius: 10%;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(25, 30, 42, 0.12);
-  margin: 12px;
-  padding: 12px;
-}
-
-.contact {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  margin-left: 1rem;
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
 
 @media screen and (max-width: 500px) {
@@ -84,10 +68,9 @@ code {
   @apply text-white bg-indigo-400 !important;
 }
 
-.item-header{
+.item-header {
   @apply block transition duration-500 ease-in-out hover:no-underline transform hover:-translate-y-1 hover:scale-110 p-2;
 }
 
 @tailwind utilities;
-
 /* Primary color: #ec4899 */
