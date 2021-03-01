@@ -19,7 +19,7 @@ body {
 
 .slider {
   position: relative;
-  height: 100vh;
+  height: 80vh;
 }
 
 .arrow-right {
@@ -42,7 +42,9 @@ body {
 
 .image {
   position: absolute;
-  width: 50%;
+  width: 256px;
+  height: 400px;
+  object-fit: cover;
   top: 25%;
   left: 25%;
 }

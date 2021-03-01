@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const ImageSlider = (props) => {
   const [current, setCurrent] = useState(0);
@@ -14,8 +14,8 @@ const ImageSlider = (props) => {
 
   return (
     <section className="slider">
-      <FaArrowCircleLeft className="arrow-left" onClick={prevSlide} />
-      <FaArrowCircleRight className="arrow-right" onClick={nextSlide} />
+      <FaAngleLeft className="arrow-left" onClick={prevSlide} />
+      <FaAngleRight className="arrow-right" onClick={nextSlide} />
       {props.data.map((slider, index) => {
         return (
           <div

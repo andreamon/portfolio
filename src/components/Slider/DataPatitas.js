@@ -20,5 +20,9 @@ export default {
       description: "Screen ...",
       image: "../portfolio/images/vet-patitas/signup.png",
     },
+    {
+      description: "Screen ...",
+      image: "../portfolio/images/vet-patitas/banana.jpg",
+    }
   ],
 };
