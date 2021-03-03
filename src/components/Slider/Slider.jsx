@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+
+import Content from "../Projects/Content";
+import Modal from "./Modal";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-const ImageSlider = (props) => {
+const Slider = (props) => {
   const [current, setCurrent] = useState(0);
-  const length = props.data.length;
+  const [selectedImage, setSelectedImage] = useState(null);
+  const length = props.data.data.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -12,11 +16,14 @@ const ImageSlider = (props) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
+  const openModal = (url) => {
+    setSelectedImage(url);
+  };
   return (
-    <section className="slider">
+    <div className="slider">
       <FaAngleLeft className="arrow-left" onClick={prevSlide} />
       <FaAngleRight className="arrow-right" onClick={nextSlide} />
-      {props.data.map((slider, index) => {
+      {props.data.data.map((slider, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
@@ -27,13 +34,23 @@ const ImageSlider = (props) => {
                 src={slider.image}
                 className="image"
                 alt={slider.description}
+                onClick={() => openModal(slider.image)}
               />
             )}
           </div>
         );
       })}
-    </section>
+      {selectedImage && (
+        <Modal
+          selectedImage={selectedImage}
+          setSelectedImage={setSelectedImage}
+        />
+      )}
+      {/* <div className="hide-desk">
+        <Content data={props.data} />
+      </div> */}
+    </div>
   );
 };
 
-export default ImageSlider;
+export default Slider;

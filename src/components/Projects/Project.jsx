@@ -1,23 +1,17 @@
 import React from "react";
 
-import Slider from "../Slider/ImageSlider";
+import Slider from "../Slider/Slider";
+import Content from "./Content";
 
 const Project = (props) => {
   return (
-    <div className="container flex flex-row justify-between items-center">
-      <div className="flex-1">
-        <Slider data={props.data.data} />
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+      <div className="md:flex-1">
+        <Slider data={props.data} />
       </div>
-      <div className="flex-1 flex-col text-center">
-        <p className="font-bold text-2xl text-pink-500 uppercase">
-          {props.data.title}
-        </p>
-        <p className="my-8 text-base">{props.data.description}</p>
-        <a href={props.data.github} target="_blank" rel="noopener noreferrer">
-          <button className="py-4 px-6 rounded bg-pink-500 text-white font-semibold text-sm uppercase tracking-wide hover:bg-pink-400">
-            Repositorio en github
-          </button>
-        </a>
+      {/* <div className="md:flex-1 md:flex-col text-center hide-mobile"> */}
+      <div className="md:flex-2 md:flex-col text-center">
+        <Content data={props.data} />
       </div>
     </div>
   );

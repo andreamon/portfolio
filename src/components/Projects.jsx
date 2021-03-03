@@ -5,8 +5,8 @@ import DataMobile from "./Slider/DataMobile";
 
 const Projects = () => {
   return (
-    <div id="projects" className="my-12">
-      <p className="text-3xl font-semibold tracking-wide uppercase text-center">
+    <div id="projects" className="container">
+      <p className="text-2xl md:text-3xl font-semibold tracking-wide uppercase text-center">
         Proyectos
       </p>
       <Project data={DataPatitas} />
