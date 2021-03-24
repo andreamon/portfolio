@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   scroll-behavior: smooth;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 * {
@@ -12,7 +15,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-poppins);
   font-size: 16px;
 }
 
