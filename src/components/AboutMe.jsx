@@ -10,8 +10,7 @@ const AboutMe = () => {
         <p className="my-2 text-lg md:text-xl font-semibold">Desarrollo Frontend</p>
         <p className="text-lg md:text-xl">
           Estoy aprendiendo constantemente sobre nuevas tecnologías y mejorando
-          mis habilidades profesionales. Me considero una persona proactiva. Me
-          gusta aprender sobre diferentes tecnologías para así poder implementar
+          mis habilidades profesionales. Me gusta aprender sobre diferentes tecnologías para así poder implementar
           las mejores soluciones.
         </p>
       </div>

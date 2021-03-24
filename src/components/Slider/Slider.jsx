@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Content from "../Projects/Content";
+// import Content from "../Projects/Content";
 import Modal from "./Modal";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
@@ -20,7 +20,7 @@ const Slider = (props) => {
     setSelectedImage(url);
   };
   return (
-    <div className="slider">
+    <div className="slider fade">
       <FaAngleLeft className="arrow-left" onClick={prevSlide} />
       <FaAngleRight className="arrow-right" onClick={nextSlide} />
       {props.data.data.map((slider, index) => {

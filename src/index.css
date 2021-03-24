@@ -28,8 +28,11 @@ body {
   position: relative;
   padding: 3rem;
   min-height: 300px;
-  
-  /* height: 80vh; */
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.589);
+  color: #fff;
 }
 
 .arrow-right {
@@ -53,18 +56,27 @@ body {
 }
 
 .image {
-  /* position: absolute;
-  width: 256px;
-  height: 400px;
-  object-fit: cover;
-  top: 25%;
-  left: 25%; */
-  width: 80%;
+  width: 100%;
   cursor: pointer;
-  /* align-self: center; */
   margin: auto;
 }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 .slide {
   text-align: center;
   opacity: 0;
