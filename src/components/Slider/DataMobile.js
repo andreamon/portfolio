@@ -8,27 +8,27 @@ export default {
       image: "../portfolio/images/meals-app/1.jpg",
     },
     {
-      description: "Screen ...",
+      description: "Screen 1",
       image: "../portfolio/images/meals-app/2.jpg",
     },
     {
-      description: "Screen ...",
+      description: "Screen 2",
       image: "../portfolio/images/meals-app/3.jpg",
     },
     {
-      description: "Screen ...",
+      description: "Screen 3",
       image: "../portfolio/images/meals-app/4.jpg",
     },
     {
-      description: "Screen ...",
+      description: "Screen 4",
       image: "../portfolio/images/meals-app/5.jpg",
     },
     {
-      description: "Screen ...",
+      description: "Screen 5",
       image: "../portfolio/images/meals-app/6.jpg",
     },
     {
-      description: "Screen ...",
+      description: "Screen 6",
       image: "../portfolio/images/meals-app/7.jpg",
     },
   ],

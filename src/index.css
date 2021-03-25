@@ -40,7 +40,7 @@ body {
   top: 50%;
   right: 0;
   z-index: 90;
-  color: #ec4899;
+  color: #fff;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -50,45 +50,43 @@ body {
   top: 50%;
   left: 0;
   z-index: 90;
-  color: #ec4899;
+  color: #fff;
   font-size: 2rem;
   cursor: pointer;
 }
 
-.image {
-  width: 100%;
+.close-modal {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 90;
+  color: #fff;
+  font-size: 2rem;
   cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #16151A;
+}
+
+.image {
   margin: auto;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 5s;
+  display: block;
+  width: 50%;
+  height: 50%;
+  max-width: 700px;
+  object-fit: cover;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 .slide {
-  text-align: center;
   opacity: 0;
-  /* transition-duration: 1s ease; */
   transition: opacity 500ms linear 0s
 }
 
 .slide.active {
+  height: 100%;
   opacity: 1;
-  /* transition-duration: 1s; */
   transition: opacity 500ms linear 0s;
-  transform: scale(1.08);
 }
 
 .backdrop {
@@ -101,20 +99,34 @@ body {
   z-index: 9999;
 }
 
-.backdrop img {
+.backdrop-img {
   display: block;
-  max-width: 60%;
-  max-height: 80%;
-  margin: 60px auto;
-  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
-  /* border: 2px solid white; */
+  margin: 10px auto 0;
+  width: 60%;
+  height: 90%;
+  /* max-width: 700px; */
+  object-fit: contain;
 }
-.hide-desk{
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.hide-desk {
   display: none;
 }
-.hide-mobile{
+
+.hide-mobile {
   display: block;
 }
+
 @media screen and (max-width: 500px) {
   body {
     font-size: 12px;
@@ -126,7 +138,7 @@ body {
   .hide-mobile {
     display: none;
   }
-  .hide-desk{
+  .hide-desk {
     display: block;
     position: absolute;
     top: 455px;
