@@ -11,8 +11,8 @@ const Header = () => {
         {/* <div className="md:flex md:justify-end tracking-wide"> */}
         <div
           className={`${
-            openMenu ? "block text-center w-full" : "hidden"
-          } md:flex md:justify-end tracking-wide text-sm md:text-base md:font-medium`}
+            openMenu ? "block text-center w-full mt-8 panel" : "hidden"
+          } md:flex md:justify-end tracking-wide text-base font-medium`}
         >
           <a href="#about-me" className="item-header">
             Sobre mi

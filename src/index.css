@@ -182,9 +182,19 @@ body {
 }
 
 .menu_burger {
+  transition: 0.4s;
   @apply px-4 py-3 border-2 rounded border-pink-500 cursor-pointer;
 }
 
+.panel {
+  /* padding: 0 18px; */
+  /* margin-top: 1.5rem;
+  background-color: #ec4899;
+  color: #fff; */
+  /* max-height: 0; */
+  /* overflow: hidden; */
+  transition: max-height 0.2s ease-out;
+}
 .menu_active {
   @apply text-white bg-pink-500 !important;
 }

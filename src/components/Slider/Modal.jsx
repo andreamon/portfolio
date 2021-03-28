@@ -42,8 +42,3 @@ const Modal = ({ closeModal, images }) => {
 };
 
 export default Modal;
-
-// <div
-//             className={index === current ? "slide active" : "slide"}
-//             key={index}
-//           ></div>
