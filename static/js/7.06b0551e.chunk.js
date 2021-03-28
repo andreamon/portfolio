@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[7],{17:function(e,t,a){"use strict";a.r(t);var n=a(0),r=a.n(n);t.default=function(){return r.a.createElement("div",{className:"mt-16 bg-gray-600 h-40 flex flex-col justify-center items-center text-white text-sm"},r.a.createElement("p",null,"Ciudad de Corrientes, Argentina"),r.a.createElement("p",null,"andrea14_06_2@hotmail.com"),r.a.createElement("p",{className:"m-1"},"2021"))}}}]);
+//# sourceMappingURL=7.06b0551e.chunk.js.map
